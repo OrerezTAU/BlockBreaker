@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tehem.blockbreaker" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/brikbakr"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".OpenMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".NamePicker"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeaderBoard"
+            android:label="@string/title_activity_leader_board" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Instructions"
+            android:label="@string/title_activity_instructions"
+            >
+
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.orerez.blockbreaker.NamePicker"
+    android:background="#010100">
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker2"
+        android:baselineAligned="true"
+        android:layout_alignTop="@+id/numberPicker1"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+       />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker1"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Submit"
+        android:layout_alignStart="@+id/Submit"
+        android:background="@android:color/white"/>
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberPicker3"
+        android:layout_above="@+id/Submit"
+        android:layout_alignLeft="@+id/Back"
+        android:layout_alignStart="@+id/Back"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/Submit"
+        android:layout_below="@+id/numberPicker2"
+        android:layout_toLeftOf="@+id/numberPicker2"
+        android:layout_toStartOf="@+id/numberPicker2"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/roundbutton"
+        android:textColor="#09afff"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Submit Your Score !"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/Back"
+        android:layout_alignTop="@+id/Submit"
+        android:layout_toRightOf="@+id/numberPicker2"
+        android:layout_toEndOf="@+id/numberPicker2"
+        android:background="@drawable/roundbutton"
+        android:textColor="#09afff"
+        android:textSize="20dp"/>
+</RelativeLayout>

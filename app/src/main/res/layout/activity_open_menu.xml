@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tehem.blockbreaker.OpenMenu"
+    android:transitionGroup="false"
+    android:alpha="0.8"
+    android:background="#010100">
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:id="@+id/SG"
+        android:background="@drawable/roundbutton"
+        android:textColor="#09afff"
+        android:textSize="20dp"
+        android:layout_above="@+id/HTP"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_marginBottom="35dp"/>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="How To Play"
+        android:id="@+id/HTP"
+        android:background="@drawable/roundbutton"
+        android:textColor="#09afff"
+        android:textSize="20dp"
+        android:layout_above="@+id/LB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Leader Board"
+        android:id="@+id/LB"
+        android:background="@drawable/roundbutton"
+        android:textColor="#09afff"
+        android:textSize="20dp"
+        android:layout_above="@+id/Q"
+        android:layout_alignLeft="@+id/HTP"
+        android:layout_alignStart="@+id/HTP"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:id="@+id/Q"
+        android:background="@drawable/roundbutton"
+        android:textColor="#09afff"
+        android:textSize="20dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignLeft="@+id/SG"
+        android:layout_alignStart="@+id/SG"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Block Breaker"
+        android:id="@+id/title"
+        android:textColor="#fafcff"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/HTP"
+        android:layout_alignStart="@+id/HTP"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/middle_petno_white"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/middle_petno_white"
+        android:layout_below="@+id/LB"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/middle_petno_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="25dp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/middle_petno_white"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2" />
+
+</RelativeLayout>

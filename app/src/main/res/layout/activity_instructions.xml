@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.tehem.blockbreaker.Instructions"
+    android:orientation="vertical"
+    android:background="#010100">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Instructions"
+                android:textSize="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/title" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Welcome to BlockBreaker, the android touch version of the famous game, with a twist !"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Your target in this game is not to break all blocks, but to survive for the longest and get the most points."
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="The longer you survive, the more balls that spawn. You get points for surviving longer, breaking more blocks and spwaning more balls. "
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Be careful ! If you miss one of the balls your score will reset, and if you miss the red ball it's game over ! "
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Try hard , survive long and beat your friends' score on the leaderboard . Good Luck :) "
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Controls"
+                android:textSize="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/title2" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/la"
+                    android:layout_gravity="left"
+                    android:src="@drawable/purplearrowleft"
+                    android:layout_marginLeft="20dp"/>
+
+
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/block"
+                    android:layout_gravity="left"
+                    android:src="@drawable/block"
+                    android:layout_marginLeft="35dp"/>
+
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/ra"
+                    android:layout_gravity="center"
+                    android:src="@drawable/purplearrowright"
+                    android:layout_marginLeft="35dp"/>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/finger"
+                android:layout_gravity="center"
+                android:src="@drawable/finger"
+                android:layout_marginLeft="35dp"/>
+
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Touch the screen to start the game. Lay a finger on any place on the screen and move it aside to make the block move to that side."
+                android:id="@+id/move" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Be advised: The faster you move the finger, the faster the block goes. If the block hits the ball fast, the latter will move faster, too !"
+                android:id="@+id/tip" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Game Screen"
+                android:textSize="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/title3" />
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/game"
+                android:layout_gravity="center"
+                android:src="@drawable/gamescreen"/>
+
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Options Menu"
+                android:textSize="30dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/title4" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Use the options menu (The 3 dots in a column) which is on the top right corner of the screen to go back to the previous menu or restart the game."
+                android:id="@+id/options" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
